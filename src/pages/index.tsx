@@ -20,7 +20,7 @@ function Index() {
 
   return (
     <div className='flex h-[90vh] flex-col bg-primary'>
-      <h1>Hola Mundo</h1>
+      <h1>Menu</h1>
       {listCard.map((item: any, index: number) => (
         <CardHome
           key={index}
