@@ -1,4 +1,4 @@
-## Características Técnicas
+## 0. Características Técnicas
 
 - ⚡️ Next.js 13
 - ⚛️ React 18
