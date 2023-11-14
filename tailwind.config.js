@@ -7,8 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#4EA4a2',
-        secondary: '#4ea662',
+        primary: '#4EA16F',
+        secondary: '#b8e2c5',
+        button: '#2C73EB',
+        text: '#0c2218',
+        tertiary: '#81C99D',
+        fourtiary: '#267549',
       },
 
       keyframes: {

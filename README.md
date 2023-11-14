@@ -1,9 +1,12 @@
-## 0. Características Técnicas
+## Características Técnicas
 
 - ⚡️ Next.js 13
 - ⚛️ React 18
 - 💨 Tailwind CSS 3
 - 💎 TypeScript
+- MongoDB
+- Docker
+- AWS S3
 
 ### 1. Instala las dependencias
 
@@ -21,10 +24,26 @@ Crear un archivo .env en la raíz del proyecto que tenga los siguientes valores.
 MONGODB_URL = ""
 NODE_ENV= "development"
 SECRET_COOKIE_PASSWORD = "KTE2iWWSeoAA.PWEL4TyQ1rVcXiOZgPyiSsI1HuwcdCK"
+AWS_ACCESS_KEY_ID=""
+AWS_SECRET_ACCESS_KEY=""
+AWS_REGION="sa-east-1"
+AWS_BUCKET_NAME=""
+AWS_DOMAIN=""
 NEXT_PUBLIC_API_URL="http://localhost:3000"
 ```
 
-### 3. Ejecuta la aplicación
+### 3. Ejecuta el servidor con Docker
+
+Puedes iniciar el servidor en modo producción usando este comando:
+
+```bash
+docker-compose up -d --build
+
+```
+
+Abre [http://localhost:3000](http://localhost:3000) con tu navegador para ver el resultado.
+
+### 4. Ejecuta la aplicacion con Docker
 
 Puedes iniciar el servidor en modo producción usando este comando:
 
@@ -43,18 +62,15 @@ npm run dev
 
 Abre [http://localhost:3000](http://localhost:3000) con tu navegador para ver el resultado.
 
-### 4. Convención para los mensajes de commit
+### 5. Proyecto en producción
 
-Este proyecto utiliza [convencional commits](https://www.conventionalcommits.org/en/v1.0.0/), es obligatorio utilizarlo para hacer commits. Para ello se debe hacer uso de la siguiente estructura:
+Proyecto en producción [https://agrecol.vercel.app/](https://agrecol.vercel.app/)
 
-```bash
-[FEATURE] feature description
-[FIX] fix description
-[ADD] add description
+### 6. Convención para los mensajes de commit
 
-```
+Este proyecto utiliza [convencional commits](https://www.conventionalcommits.org/en/v1.0.0/), es obligatorio utilizarlo para hacer commits.
 
-### 5. Arquitectura de carpetas
+### 7. Arquitectura de carpetas
 
 ```bash
 ├── public               # Activos estáticos
